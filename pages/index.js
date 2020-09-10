@@ -1,6 +1,20 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+import layout from "../Components/layout";
+import React, {Component} from "react";
 
-export default function Home() {
+class index extends Component {
+  state = {};
+  render() {
+    return <layout />;
+  }
+}
+
+export default index;
+
+//const index = () => <layout>Welcome to violin world</layout>
+
+/*export default function Home() {
   return (
     <div className="container">
       <Head>
@@ -12,15 +26,19 @@ export default function Home() {
         <h1 className="title">
           Violin For All
         </h1>
+        
+        <div className="navbar">
+          <link href="/Home"><Nav.Link>Home</Nav.Link></link>
+        </div>
 
-        <nav className="navbar">
-          <span>Home</span>
+          
+          
           <span>Login</span>
           <span>Tutorials</span>
           <span>Sheet Music</span>
           <span>Forum</span>
           <span>Message</span>
-        </nav>
+        
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
@@ -67,6 +85,8 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
+
+
 
       <style jsx>{`
         .container {
@@ -215,4 +235,4 @@ export default function Home() {
       `}</style>
     </div>
   )
-}
+};*/
