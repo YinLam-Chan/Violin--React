@@ -4,14 +4,23 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Violin For All</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Violin For All
         </h1>
+
+        <nav className="navbar">
+          <span>Home</span>
+          <span>Login</span>
+          <span>Tutorials</span>
+          <span>Sheet Music</span>
+          <span>Forum</span>
+          <span>Message</span>
+        </nav>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
